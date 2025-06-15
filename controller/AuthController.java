@@ -24,6 +24,7 @@ public class AuthController {
     public ResponseEntity<?> createUser(@RequestBody UserDto userDto) {
         ResponseEntity<?> dto = userService.createUser(userDto);
         return new ResponseEntity<>(dto , HttpStatus.CREATED);
+        System.out.println("100");
     }
 
     @PostMapping("/property/sign-up")
